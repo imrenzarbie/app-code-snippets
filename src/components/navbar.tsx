@@ -23,7 +23,13 @@ const Navbar = ({ onMenuClick, showMenuButton = false }: NavbarProps) => {
                 <div className="flex items-center gap-2 font-semibold">
                     <span>Logo</span>
                 </div>
-                <nav className="ml-auto flex items-center gap-4"></nav>
+                <nav className="ml-auto flex items-center gap-4">                    <Link
+                        to="/lab/kanban-dashboard"
+                        className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                    >
+                        KanbanDashboard
+                    </Link>
+                </nav>
             </div>
         </header>
     );
