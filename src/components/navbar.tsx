@@ -31,7 +31,7 @@ const Navbar = ({ onMenuClick, showMenuButton = false }: NavbarProps) => {
                         Kanban Dashboard
                     </Link>
                     <Link
-                        to="/lab/ticket-triage-setup"
+                        to="/ticket-triage-setup"
                         className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
                         Ticket Triage Setup
                     </Link>
