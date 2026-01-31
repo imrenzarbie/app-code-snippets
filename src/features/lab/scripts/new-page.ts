@@ -16,6 +16,14 @@ const pascalName = input
     .replace(/[-_]+(.)?/g, (_, char) => (char ? char.toUpperCase() : ""))
     .replace(/^\w/, (c) => c.toUpperCase());
 
+// Convert to title case with spaces (agent-setup -> Agent Setup)
+const titleName = input
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .replace(/[-_]+/g, " ")
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(" ");
+
 // Keep kebab-case for filename (AgentSetup -> agent-setup)
 const kebabName = input
     .replace(/([a-z0-9])([A-Z])/g, "$1-$2")
@@ -37,7 +45,7 @@ const content = `const ${componentName} = () => {
     <div className="min-h-screen bg-gray-50">
       {/* PASTE COMPONENT HERE */}
       <div className="p-8">
-        <h1 className="text-2xl font-bold">${pascalName}</h1>
+        <h1 className="text-2xl font-bold">${titleName}</h1>
       </div>
     </div>
   )
@@ -65,7 +73,7 @@ if (existsSync(navbarPath)) {
                         to="/lab/${kebabName}"
                         className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
                     >
-                        ${pascalName}
+                        ${titleName}
                     </Link>`;
 
         // Check if nav section exists
@@ -139,3 +147,4 @@ if (existsSync(routerPath)) {
 
 console.log(`\n🌐 http://localhost:3000/lab/${kebabName}`);
 console.log(`📝 Component: ${componentName}`);
+console.log(`📄 Display Name: ${titleName}`);
