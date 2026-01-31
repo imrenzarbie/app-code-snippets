@@ -1,8 +1,8 @@
-export { BottomNavigation } from "./BottomNavigation";
-export { LeftSidebar } from "./LeftSidebar";
-export { MainForm } from "./MainForm";
-export { MobileHeader } from "./MobileHeader";
-export { MobileSidebarOverlay } from "./MobileSidebarOverlay";
-export { MobileStepper } from "./MobileStepper";
-export { PreviewPanel } from "./PreviewPanel";
-export { StepperHeader } from "./StepperHeader";
+export { BottomNavigation } from "./bottom-navigation";
+export { LeftSidebar } from "./left-sidebar";
+export { MainForm } from "./main-form";
+export { MobileHeader } from "./mobile-header";
+export { MobileSidebarOverlay } from "./mobile-sidebar-overlay";
+export { MobileStepper } from "./mobile-stepper";
+export { PreviewPanel } from "./preview-panel";
+export { StepperHeader } from "./stepper-header";

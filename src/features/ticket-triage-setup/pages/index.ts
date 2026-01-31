@@ -1,1 +1,1 @@
-export { default as TicketTriageSetupPage } from "./TicketTriageSetupPage";
+export { default as TicketTriageSetupPage } from "./ticket-triage-setup-page";
