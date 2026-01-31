@@ -1,6 +1,7 @@
 import { TicketTriageSetupPage } from "@/features/ticket-triage-setup";
 import NavbarLayout from "@/pages/navbar-layout";
 import { createBrowserRouter } from "react-router";
+import KanbanDashboardPagePage from "@/features/lab/pages/kanban-dashboard-page";
 
 export const router = createBrowserRouter([
     {
@@ -14,6 +15,10 @@ export const router = createBrowserRouter([
             {
                 path: "/ticket-triage-setup",
                 element: <TicketTriageSetupPage />,
+            },
+            {
+                path: "/lab/kanban-dashboard-page",
+                element: <KanbanDashboardPagePage />,
             },
         ],
     },

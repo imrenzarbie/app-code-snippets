@@ -24,16 +24,15 @@ const Navbar = ({ onMenuClick, showMenuButton = false }: NavbarProps) => {
                     <span>Logo</span>
                 </div>
                 <nav className="ml-auto flex items-center gap-4">
-                    {" "}
-                    <Link
-                        to="/lab/kanban-dashboard"
-                        className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
-                        Kanban Dashboard
-                    </Link>
                     <Link
                         to="/ticket-triage-setup"
                         className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
                         Ticket Triage Setup
+                    </Link>
+                    <Link
+                        to="/lab/kanban-dashboard-page"
+                        className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+                        Kanban Dashboard Page
                     </Link>
                 </nav>
             </div>
